@@ -4,6 +4,6 @@
   "private": true,
   "main": "src/controller.js",
   "dependencies": {
-    "corespring-legacy-protractor": "PieLabs/corespring-legacy-protractor"
+    "corespring-legacy-protractor": "corespring/corespring-legacy-protractor"
   }
 }
