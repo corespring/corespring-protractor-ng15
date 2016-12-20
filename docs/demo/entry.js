@@ -7,19 +7,12 @@
         import Controller from 'pie-controller';
         window.pie = window.pie || {};
         window.pie.Controller = Controller;
-
-  import comp1 from 'pie-player';
-  //customElements v1 
-  customElements.define('pie-player', comp1);
-  
-
-  import comp2 from 'pie-control-panel';
-  //customElements v1 
-  customElements.define('pie-control-panel', comp2);
-  
-
-  import comp3 from 'corespring-protractor-ng15';
-  //customElements v1 
-  customElements.define('corespring-protractor-ng15', comp3);
-  
+import PiePlayer from 'pie-player';
+customElements.define('pie-player', PiePlayer);
+import PieControlPanel from 'pie-control-panel';
+customElements.define('pie-control-panel', PieControlPanel);
+import CorespringProtractorNg15 from 'corespring-protractor-ng15';
+customElements.define('corespring-protractor-ng15', CorespringProtractorNg15);
+import CorespringTextEntryNg15 from 'corespring-text-entry-ng15';
+customElements.define('corespring-text-entry-ng15', CorespringTextEntryNg15);
     

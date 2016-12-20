@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "corespring-protractor-ng15-controller": "../node_modules/corespring-protractor-ng15/controller",
+    "corespring-text-entry-ng15-controller": "../node_modules/corespring-text-entry-ng15/controller",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "webpack": "2.1.0-beta.21",

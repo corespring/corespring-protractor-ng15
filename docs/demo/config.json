@@ -3,7 +3,8 @@
     "en-US"
   ],
   "elements": {
-    "corespring-protractor-ng15": "../.."
+    "corespring-protractor-ng15": "../..",
+    "corespring-text-entry-ng15": "corespring/corespring-text-entry-ng15"
   },
   "models": [
     {
@@ -11,6 +12,53 @@
       "element": "corespring-protractor-ng15",
       "model": {
         "config": {}
+      }
+    },
+    {
+      "id": "2",
+      "element": "corespring-text-entry-ng15",
+      "correctResponses" : {
+        "award" : 100.0,
+        "values" : [ 
+          "45", 
+          "45 deg", 
+          "45 degrees", 
+          "45 degree"
+        ],
+        "ignoreWhitespace" : false,
+        "ignoreCase" : true,
+        "feedback" : {
+          "type" : "default",
+          "value" : "Correct!"
+        }
+      },
+      "incorrectResponses" : {
+        "award" : 0.0,
+        "feedback" : {
+          "type" : "custom",
+          "value" : "<div style=\"padding-bottom: 6px;\"><div><span>The angle is actually&nbsp;</span>​<span mathjax=\"\">\\(45^\\circ\\)</span>​. To use a pr​​otractor, place the small dot in the center of the bottom edge right at the vertex of the angle (the place where the two segments or rays meet.) Align one of the rays with the edge of the protractor that is marked&nbsp;</div>​<span mathjax=\"\">\\(0^\\circ\\)</span>​, then read the marking where the other ray lies.</div>",
+          "custom" : "<div style=\"padding-bottom: 6px;\"><div><span>The angle is actually&nbsp;</span>​<span mathjax=\"\">\\(45^\\circ\\)</span>​. To use a pr​​otractor, place the small dot in the center of the bottom edge right at the vertex of the angle (the place where the two segments or rays meet.) Align one of the rays with the edge of the protractor that is marked&nbsp;</div>​<span mathjax=\"\">\\(0^\\circ\\)</span>​, then read the marking where the other ray lies.</div>"
+        }
+      },
+      "model" : {
+        "answerBlankSize" : 8.0,
+        "answerAlignment" : "left"
+      },
+      "partialResponses" : {
+        "values" : [ 
+          "46", 
+          "47", 
+          "44", 
+          "43"
+        ],
+        "award" : 100.0,
+        "ignoreCase" : false,
+        "ignoreWhitespace" : false,
+        "feedback" : {
+          "type" : "custom",
+          "custom" : "<div style=\"padding-bottom: 6px;\">The angle is actually&nbsp;​<span mathjax=\"\">\\(45^\\circ\\)</span>​, but your measurement was close!</div>",
+          "value" : "<div style=\"padding-bottom: 6px;\">The angle is actually&nbsp;​<span mathjax=\"\">\\(45^\\circ\\)</span>​, but your measurement was close!</div>"
+        }
       }
     }
   ]
